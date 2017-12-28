@@ -204,7 +204,7 @@ public class ScaffoldProcessor {
         System.out.println("#######################################################");
         System.out.println();
         System.out.println("** excuse me writing yet another scaffolding tool, however this is the only one **");
-        System.out.println("** working from fully compileable and runnable template projects             **");
+        System.out.println("** working from fully compileable and runnable template projects                **");
         System.out.println();
         System.out.println();
         System.out.println("Initializing template engine ..");
