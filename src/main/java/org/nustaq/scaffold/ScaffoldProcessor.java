@@ -148,12 +148,15 @@ public class ScaffoldProcessor {
     }
 
     private String normalizeDirString(String relDir) {
+        relDir = replaceSep(relDir);
         if ( ! relDir.endsWith(File.separator) ) {
             relDir += "/";
         }
-        if ( ! relDir.startsWith(File.separator) ) {
-            relDir = "/"+relDir;
-        }
+        return relDir;
+    }
+
+    public static String replaceSep(String relDir) {
+        relDir = relDir.replace('\\', '/');
         return relDir;
     }
 

@@ -18,6 +18,8 @@ public class Scaffold implements Serializable {
         }
         templateBaseDir = new File(templateBaseDir).getAbsolutePath();
         outputBaseDir = new File(outputBaseDir).getAbsolutePath();
+        templateBaseDir = ScaffoldProcessor.replaceSep(templateBaseDir);
+        outputBaseDir = ScaffoldProcessor.replaceSep(outputBaseDir);
     }
 
     Step steps[] = {};
